@@ -1,0 +1,36 @@
+
+package movie;
+
+public class Movie {
+private String title ;
+private String director;
+ int releaseYear ;
+  public int getreleaseYear() {
+ return releaseYear;
+ }
+ public void setreleaseYear(int releaseYear) {
+ this.releaseYear = releaseYear;
+ }
+  public String gettitle() {
+ return title;
+ }
+ public void settitle(String title) {
+ this.title = title;
+ }
+   public String getdirector() {
+ return director;
+ }
+ public void setdirector(String director) {
+ this.director = director;
+ }
+    public static void main(String[] args) {
+        Movie m=new Movie();
+        m.settitle("The Great War");
+        m.setdirector("Nida Iqbal");
+        m.setreleaseYear(2006);
+        System.out.println("The movie title is "+m.gettitle());
+        System.out.println("The director is "+m.getdirector());
+        System.out.println("The year of release is "+m.getreleaseYear());
+    }
+    
+}
