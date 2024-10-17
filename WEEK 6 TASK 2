@@ -1,0 +1,43 @@
+package appliances;
+
+
+public class Appliances {
+private String brand ;
+private String model ;
+private int powerConsumption;
+Appliances(String brand,String model,int powerConsumption)
+{
+this.brand=brand;
+this.model=model;
+this.powerConsumption=powerConsumption;}
+public String getbrand()
+{return brand;}
+   public String getmodel()
+{return model;}
+   public int getpowerConsumption()
+{return powerConsumption;}
+   
+    public static void main(String[] args) {
+      
+Refrigerator fridge = new Refrigerator("Haier", "S240000e",250, 4);
+
+ System.out.println("Brand: " + fridge.getbrand());
+ System.out.println("Model: " + fridge.getmodel());
+ System.out.println("Year: " +fridge.getpowerConsumption()+" Watts.");
+ System.out.println("Capacity: " + fridge.getcapacity()+" Tons.");
+ }   
+}
+ package appliances;
+
+
+public class Refrigerator extends Appliances {
+    private int capacity;
+    public Refrigerator(String brand,String model,int powerConsumption,int capacity){
+        super(model,brand,powerConsumption);
+        this.capacity=capacity;
+    }
+    public void setcapacity(int capacity)
+    {this.capacity=capacity;}
+    public int getcapacity(){return capacity;}
+    
+}
