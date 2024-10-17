@@ -1,0 +1,20 @@
+package area;
+
+public class Area {
+float length;
+   float width;
+     void displayInfo(float length,float width){
+         float area;
+         area=length*width;
+     System.out.println("Area: "+ area);
+    
+     }
+    public static void main(String[] args) {
+        Area a=new Area();
+        a.length=23;
+        a.width=25;
+        a.displayInfo(23, 25);
+        
+    }
+    
+}
